@@ -77,7 +77,28 @@ find ./dereplicated_genomes/ -name "*.fa" > MAGs.all.path.list
 ```text
 mkdir -p output/checkm2;checkm2 predict --input output/all_MAGs/ --output-directory output/checkm2/
 ```
-### Step 1: GUNC chimerism assessment
+### Step 2: GUNC chimerism assessment
 ```text
 mkdir -p output/gunc;gunc run  --input_dir output/all_MAGs/  --db_file /path/to/gunc_db_progenomes2.1.dmnd --out_dir output/gunc/
+```
+### Step 3: MAG filtering
+MAGs were retained according to the following criteria:
+```text
+Completeness >= 50%
+Contamination < 10%
+GUNC pass
+```
+Genome quality score was calculated as:
+```text
+Quality score = Completeness - 5 × Contamination
+```
+High-quality MAGs were defined as:
+```text
+Completeness >= 90%
+Contamination < 5%
+```
+Medium-quality MAGs were defined as:
+```text
+Completeness >= 50%
+Contamination < 10%
 ```
