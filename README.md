@@ -1,2 +1,2 @@
-# Global Skin Metagenomic Data (GSMD)
-Analysis of Global Skin Metagenomic Data (GSMD) resource
+# Analysis of Global Skin Metagenomic Data (GSMD)
+Here we established an extensive catalog of Global Skin Metagenomic Data (GSMD) by integrating 12,409 newly sequenced and 4,396 publicly available skin metagenomes, along with 3,077 isolate genomes. we reconstructed 452,401 metagenome-assembled genomes (MAGs) and identified 11,891 prokaryotic, 166 eukaryotic, and 87,770 viral species-level genome bins (SGBs). This resource introduces 42,759 previously uncharacterized taxa, substantially expanding the known phylogenetic diversity and metabolic repertoire of skin-associated microbial communities. In addition, we cataloged 1.71 billion protein sequences, identifying 79,434 novel sequence clusters lacking homology to existing functional databases. 
