@@ -1,3 +1,10 @@
 # Analysis of Global Skin Metagenomic Data (GSMD)
 Here we established an extensive catalog of Global Skin Metagenomic Data (GSMD) by integrating 12,409 newly sequenced and 4,396 publicly available skin metagenomes, along with 3,077 isolate genomes. we reconstructed 452,401 metagenome-assembled genomes (MAGs) and identified 11,891 prokaryotic, 166 eukaryotic, and 87,770 viral species-level genome bins (SGBs). This resource introduces 42,759 previously uncharacterized taxa, substantially expanding the known phylogenetic diversity and metabolic repertoire of skin-associated microbial communities. In addition, we cataloged 1.71 billion protein sequences, identifying 79,434 novel sequence clusters lacking homology to existing functional databases. 
 # Data Availability
+• The metagenomic data in GSMD Dataset and 452,401 metagenome-assembled genomes are available in the CNGB Nucleotide Sequence Archive (CNSA: https://db.cngb.org/cnsa) under accession number CNP0005495.  
+• The databases constructed for bacteria, fungi, and viruses using the Sylph software are available for download via the [link](cloud.stomics.tech). 
+# Workflow <img width="782" height="476" alt="image" src="https://github.com/user-attachments/assets/44492969-581e-4cca-b0c0-4721d7540d91" />
+The detailed steps and software used in the article method, including: Preprocessing of metagenomic data, Metagenomic assembly and extraction of MAGs, Genome quality assessment, SGB clustering and annotation, SGB function annotation, Identification and quality control of viral genomes,Viral genome clustering and phylogenetic tree construction, species abundance analysis, Host prediction for the vSGBs, Identification of fungal MAGs, Taxonomic classification and clustering of fMAGs, Phylogenetic analysis and functional annotation of fSGBs, Skin microbial gene catalog. We would like to thank DCS Cloud (https://cloud.stomics.tech) for providing the computational resources and software support necessary for this study.  
+# Genome assembly and binning
+Required
+
