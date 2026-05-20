@@ -298,3 +298,8 @@ All-versus-all protein alignment:
 ```text
 sh ./Skin_microbial_gene_catalog/diamond_blastp.sh
 ```
+Gene clusters were generated using HipMCL.
+```text
+sh ./Skin_microbial_gene_catalog/hipmcl.sh
+```
+Representative sequences were selected for each gene cluster.
