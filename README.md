@@ -267,3 +267,17 @@ Rscript ./fSGBs_cluster/orthofinder.sh
 ```text
 Rscript ./fSGBs_cluster/Functional_annotation.sh
 ```
+# Skin microbial gene catalog
+Required
+```text
+EukRep v0.6.7
+EukCC v2.1.3
+dRep v3.4.0
+BLAST v2.11.0
+fastANI v1.34
+GeneMark-ES v4.68
+OrthoFinder v3.0.1
+EggNOG-mapper v2.1.3
+NCBI fungal reference genomes
+GNU parallel
+```
