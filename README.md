@@ -303,3 +303,14 @@ Gene clusters were generated using HipMCL.
 sh ./Skin_microbial_gene_catalog/hipmcl.sh
 ```
 Representative sequences were selected for each gene cluster.
+### Step 3: Identification of novel sequence clusters
+Protein clusters lacking homology to existing databases were identified by searching against Pfam-A and RefSeq.  
+Search against Pfam-A:
+```text
+sh ./Skin_microbial_gene_catalog/Pfam-A.sh
+```
+Search against RefSeq:
+```text
+sh ./Skin_microbial_gene_catalog/RefSeq.sh
+```
+Novel sequence clusters were defined as clusters without significant hits to known functional databases.
