@@ -283,5 +283,18 @@ GNU parallel
 ```
 ### Step 1: Predict genes from assembled contigs
 ```text
-sh ./Skin_microbial_gene_catalog/prodigal.sh
+sh ./Skin_microbial_gene_catalog/contig_prodigal.sh
+```
+All predicted protein sequences were merged:
+```text
+cat output/gene_prediction/*.faa > output/GSMD_all_proteins.faa
+```
+### Step 2: Construct non-redundant gene catalog
+Protein sequences were clustered using sequence similarity and alignment coverage thresholds.
+```text
+sh ./Skin_microbial_gene_catalog/diamond_makedb.sh
+```
+All-versus-all protein alignment:
+```text
+sh ./Skin_microbial_gene_catalog/diamond_blastp.sh
 ```
