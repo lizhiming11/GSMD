@@ -202,7 +202,7 @@ R
 ```
 ### Step 1: Cluster viral genomes into vSGBs
 ```text
-Rscript ./vSGBs_cluster_host/Cluster.sh
+sh ./vSGBs_cluster_host/Cluster.sh
 ```
 vMAGs were clustered into vSGBs using the following criteria:
 ```text
@@ -212,15 +212,15 @@ Alignment fraction >= 85%
 Representative viral genomes were selected according to genome completeness and genome length.
 ### Step 2: Viral phylogenetic tree construction
 ```text
-Rscript ./vSGBs_cluster_host/phylogenetic.sh
+sh ./vSGBs_cluster_host/phylogenetic.sh
 ```
 ### Step 3: Predict viral hosts
 ```text
-Rscript ./vSGBs_cluster_host/iphop.sh
+sh ./vSGBs_cluster_host/iphop.sh
 ```
 ### Step 4: Functional analysis of vSGBs
 ```text
-Rscript ./vSGBs_cluster_host/function.sh
+sh ./vSGBs_cluster_host/function.sh
 ```
 # Identification of fungal MAGs
 Required
@@ -238,7 +238,7 @@ GNU parallel
 ```
 ### Step 1: Extract eukaryotic sequences from MAGs
 ```text
-Rscript ./fSGBs_cluster/eukcc.sh
+sh ./fSGBs_cluster/eukcc.sh
 ```
 Fungal MAGs were retained using the following criteria:
 ```text
@@ -247,25 +247,25 @@ Contamination < 10%
 ```
 ### Step 2: Dereplication of fungal MAGs
 ```text
-Rscript ./fSGBs_cluster/drep_fMAGs.sh
+sh ./fSGBs_cluster/drep_fMAGs.sh
 ```
 The representative genomes were defined as fungal species-level genome bins, abbreviated as fSGBs.
 ### Step 3: Taxonomic annotation by fastANI
 ```text
-Rscript ./fSGBs_cluster/fastANI.sh
+sh ./fSGBs_cluster/fastANI.sh
 ```
 Taxonomic assignments were determined using ANI-based similarity to reference fungal genomes.
 ### Step 4: Gene prediction for fSGBs
 ```text
-Rscript ./fSGBs_cluster/fungal_genemark.sh
+sh ./fSGBs_cluster/fungal_genemark.sh
 ```
 ### Step 5: Phylogenetic analysis using OrthoFinder
 ```text
-Rscript ./fSGBs_cluster/orthofinder.sh
+sh ./fSGBs_cluster/orthofinder.sh
 ```
 ### Step 6: Functional annotation of fungal proteins
 ```text
-Rscript ./fSGBs_cluster/Functional_annotation.sh
+sh ./fSGBs_cluster/Functional_annotation.sh
 ```
 # Skin microbial gene catalog
 Required
@@ -280,4 +280,8 @@ OrthoFinder v3.0.1
 EggNOG-mapper v2.1.3
 NCBI fungal reference genomes
 GNU parallel
+```
+### Step 1: Predict genes from assembled contigs
+```text
+sh ./Skin_microbial_gene_catalog/prodigal.sh
 ```
